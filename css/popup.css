@@ -82,9 +82,14 @@
 @media screen and (max-width: 768px) {
 
     .btnPopup {
-        bottom: 5%;
-        left: 30%;
+        bottom: 1%;
+        left: 25%;
+        padding: 0 0.5rem 0 0.5rem;
         font-size: 0.8rem;
+    }
+
+    .btnPopup img {
+       display: none;
     }
 
     .grid3 {
