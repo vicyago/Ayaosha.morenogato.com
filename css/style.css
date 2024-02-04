@@ -43,7 +43,7 @@ main {
 /* Neon image class */
 .neon-image {
     position: absolute; /* Use absolute positioning for precise control */
-    top: 35%; /* Position element 50% from the top edge of the parent */
+    top: 30%; /* Position element 50% from the top edge of the parent */
     left: 50%; /* Position element 50% from the left edge of the parent */
     transform: translate(
         -50%,
@@ -80,6 +80,12 @@ main {
     transition: opacity 1s ease-in-out; /* Add a transition for opacity property */
 }
 
+iframe {
+    border-radius: 0.5rem;
+    margin-top: 25%;
+    background-color: transparent;
+}
+
 @media screen and (max-width: 767px) {
     .neon-image {
         width: 80%;
@@ -92,4 +98,10 @@ main {
     .neon-word {
         font-size: 0.5rem; /* Set font size to 18 pixels */
     }
+
+    iframe {
+        margin-top: 65%;
+        width: 80%;
+    }
+    
 }
