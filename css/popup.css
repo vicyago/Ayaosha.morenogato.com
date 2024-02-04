@@ -80,6 +80,13 @@
 
 /* Media query for smaller screens (e.g., mobile devices) */
 @media screen and (max-width: 768px) {
+
+    .btnPopup {
+        bottom: 5%;
+        left: 30%;
+        font-size: 0.8rem;
+    }
+
     .grid3 {
         grid-template-columns: 1fr;
         height: calc(
