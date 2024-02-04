@@ -1,4 +1,21 @@
-/* Body container */
+/* Define variables for colors and other repeated values */
+:root {
+    --background-color: transparent;
+    --text-color: black;
+    --link-color: white;
+    --hover-color: rgba(255, 255, 255, 0.315);
+    --side-nav-color: rgba(255, 255, 255, 0.315);
+    --side-nav-shadow: 0.125rem 0.5rem 1.25rem rgba(0, 0, 0, 0.24);
+    --neon-color: #fbfbc1;
+    --base-font-size: 16px;
+}
+
+/* Set the base font size for the html element */
+html {
+    font-size: var(--base-font-size);
+}
+
+/* Style the body element */
 body {
     margin: 0; /* Sets the all the content to have 0 margin */
     overflow: hidden; /* Hide overflow content */
@@ -7,7 +24,7 @@ body {
     background-size: cover; /* Scale background image to cover the element */
 }
 
-/* Main container */
+/* Style the main element */
 main {
     position: relative;
     display: flex; /* Use flex display to align items */
@@ -15,7 +32,7 @@ main {
     align-items: center; /* Center items vertically */
 }
 
-/* Image container */
+/* Style the image container element */
 .imgcontainer {
     display: flex; /* Use flex display to align items */
     justify-content: center; /* Center items horizontally */
@@ -23,24 +40,29 @@ main {
     height: 100vh; /* Set height to 100% of viewport height */
 }
 
+/* Style the background image element */
 .half-image {
-    width: 50vw;
-    height: 120vh;
+    width: 50vw; /* Use a relative unit for width */
+    height: 120vh; /* Use a relative unit for height */
     object-fit: cover;
     position: absolute; /* Use absolute positioning for precise control */
     z-index: 2;
     transition: transform 15s ease-out; /* Add transition for smooth animation */
 }
+
+/* Style the left background image element */
 #leftImage {
     left: 0;
-    top: -25vh;
-}
-#rightImage {
-    right: 0;
-    top: -25vh;
+    top: -25vh; /* Use a relative unit for top */
 }
 
-/* Neon image class */
+/* Style the right background image element */
+#rightImage {
+    right: 0;
+    top: -25vh; /* Use a relative unit for top */
+}
+
+/* Style the neon image element */
 .neon-image {
     position: absolute; /* Use absolute positioning for precise control */
     top: 30%; /* Position element 50% from the top edge of the parent */
@@ -54,12 +76,12 @@ main {
     object-fit: cover; /* Scale image to cover the element */
     border-radius: 0.375rem; /* Add rounded corners to the element */
     filter: drop-shadow(
-        0 0 1.25rem rgba(255, 0, 255, 0.7)
-    ); /* Add a neon pink drop shadow effect to the element */
+        0 0 1.25rem var(--neon-color)
+    ); /* Add a neon drop shadow effect to the element using the neon color variable */
     transition: filter 0.3s, transform 0.4s ease-out; /* Add transitions for filter and transform properties */
 }
 
-/* Neon words container */
+/* Style the neon words container element */
 .neon-words-container {
     position: fixed; /* Use fixed positioning to stay in the same place */
     top: 0; /* Position element at the top edge of the viewport */
@@ -69,39 +91,50 @@ main {
     z-index: -1; /* Set z-index to -1 to appear behind other content */
 }
 
-/* Neon word class */
+/* Style the neon word element */
 .neon-word {
     position: absolute; /* Use absolute positioning for precise control */
     font-family: "Tilt Neon", sans-serif; /* Use a custom neon font */
-    font-size: 1.125rem; /* Set font size to 18 pixels */
-    color: #fbfbc1; /* Set text color to neon pink */
-    text-shadow: 0 0 0.625rem #fbfbc1, 0 0 1.25rem #fbfbc1, 0 0 1.875rem #fbfbc1; /* Add a neon glow effect to the text */
+    font-size: 1.125rem; /* Use a relative unit for font size */
+    color: var(
+        --neon-color
+    ); /* Set text color to neon pink using the neon color variable */
+    text-shadow: 0 0 0.625rem var(--neon-color), 0 0 1.25rem var(--neon-color),
+        0 0 1.875rem var(--neon-color); /* Add a neon glow effect to the text using the neon color variable */
     opacity: 0; /* Set opacity to 0 to make the text invisible */
     transition: opacity 1s ease-in-out; /* Add a transition for opacity property */
 }
 
+/* Style the iframe element */
 iframe {
-    border-radius: 0.5rem;
-    margin-top: 25%;
-    background-color: transparent;
+    padding: 0.2rem 0 0.2rem 0;
+    border-radius: 0.5rem; /* Add rounded corners to the element */
+    margin-top: 25%; /* Use a relative unit for margin */
+    background-color: var(
+        --background-color
+    ); /* Use the background color variable */
 }
 
+/* Apply styles for screens that are smaller than 768 pixels wide */
 @media screen and (max-width: 767px) {
+    /* Adjust the neon image width */
     .neon-image {
-        width: 80%;
+        width: 80%; /* Use a relative unit for width */
     }
 
+    /* Adjust the background image object-fit */
     .half-image {
         object-fit: contain;
     }
 
+    /* Adjust the neon word font size */
     .neon-word {
-        font-size: 0.5rem; /* Set font size to 18 pixels */
+        font-size: 0.5rem; /* Use a relative unit for font size */
     }
 
+    /* Adjust the iframe margin and width */
     iframe {
-        margin-top: 65%;
-        width: 80%;
+        margin-top: 65%; /* Use a relative unit for margin */
+        width: 80%; /* Use a relative unit for width */
     }
-    
 }

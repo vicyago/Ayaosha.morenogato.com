@@ -92,11 +92,13 @@ function createNeonWord() {
     // Append the span element to the neon words container
     document.getElementById("neon-words-container").appendChild(neonWord);
 }
+
 // Create fewer neon words for a balanced effect
 // Use a for loop to call the createNeonWord function 30 times
 for (let i = 0; i < 30; i++) {
     createNeonWord();
 }
+
 // Randomly show/hide neon words
 // Use setInterval to run a function every 500 milliseconds
 setInterval(() => {

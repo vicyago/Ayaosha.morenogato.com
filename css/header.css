@@ -1,72 +1,102 @@
-header {
-    background-color: transparent;
+/* Define variables for colors and other repeated values */
+:root {
+    --background-color: transparent;
+    --text-color: black;
+    --link-color: white;
+    --hover-color: rgba(255, 255, 255, 0.315);
+    --side-nav-color: rgba(54, 54, 54, 0.596);
+    --side-nav-shadow: 0.125rem 0.5rem 1.25rem rgba(0, 0, 0, 0.24);
+    --base-font-size: 16px;
 }
 
+/* Set the base font size for the html element */
+html {
+    font-size: var(--base-font-size);
+}
+
+/* Style the header element */
+header {
+    background-color: var(
+        --background-color
+    ); /* Use the background color variable */
+}
+
+/* Style the top navigation element */
 #myTopnav {
     margin-right: 0;
 }
 
+/* Style the menu icon element */
 #menuIcon a {
-    font-size: 0.9375rem;
+    font-size: 0.9375rem; /* Use a relative unit for font size */
 }
 
+/* Style the header container element */
 .head_container {
-    padding: 1rem;
+    padding: 1rem; /* Use a relative unit for padding */
     overflow: hidden;
 }
 
+/* Style the logo element */
 .logo {
     float: left;
-    margin: 0.5rem 0 0 0.5rem;
+    margin: 0.5rem 0 0 0.5rem; /* Use a relative unit for margin */
 }
 
+/* Style the logo image element */
 .logo img {
-    height: 6vmax;
+    height: 6vmax; /* Use a relative unit for height */
 }
 
+/* Style the menu element */
 .menu {
-    padding: 0 0.5rem 0 0.5rem;
+    padding: 0 0.5rem 0 0.5rem; /* Use a relative unit for padding */
     float: right;
 }
 
+/* Style the menu list element */
 .menu ul {
     list-style-type: none;
 }
 
+/* Style the menu item element */
 .menu li {
     display: inline;
 }
 
+/* Style the menu link element */
 .menu a {
     text-decoration: none;
     text-transform: uppercase;
-    color: black;
-    padding: 0.5rem;
+    color: var(--text-color); /* Use the text color variable */
+    padding: 0.5rem; /* Use a relative unit for padding */
 }
 
+/* Style the menu image element */
 .menu img {
-    width: 15%;
+    width: 15%; /* Use a relative unit for width */
 }
 
+/* Add a scale effect on the menu image element when hovered */
 .menu img:hover {
     scale: 90%;
     transition: 0.2s;
 }
 
+/* Hide the icon element by default */
 .icon {
     display: none;
 }
 
+/* Style the menu element when it is responsive */
 .menu.responsive {
     position: relative;
-}
-
-.menu.responsive {
     float: none;
     display: block;
     text-align: left;
 }
 
+/* Style the side navigation element */
 .sidenav {
     height: 100%;
     width: 0;
@@ -74,60 +104,74 @@ header {
     z-index: 4;
     top: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.315);
+    background-color: var(
+        --side-nav-color
+    ); /* Use the side navigation color variable */
     overflow-x: hidden;
     transition: 0.2s;
-    padding-top: 5.4375rem;
-    box-shadow: 0.125rem 0.5rem 1.25rem rgba(0, 0, 0, 0.24);
+    padding-top: 5.4375rem; /* Use a relative unit for padding */
+    box-shadow: var(
+        --side-nav-shadow
+    ); /* Use the side navigation shadow variable */
 }
 
+/* Style the side navigation list element */
 .sidenav ul {
     list-style-type: none;
 }
 
+/* Style the side navigation link element */
 .sidenav a {
-    padding: 0.5rem 0.5rem 0.5rem 2rem;
+    padding: 0.5rem 0.5rem 0.5rem 2rem; /* Use a relative unit for padding */
     text-decoration: none;
-    font-size: 1.5625rem;
-    color: white;
+    font-size: 1.5625rem; /* Use a relative unit for font size */
+    color: var(--link-color); /* Use the link color variable */
     display: block;
     transition: 0.3s;
 }
 
+/* Change the color of the side navigation link element when hovered or focused */
 .sidenav a:hover,
 .offcanvas a:focus {
-    color: rgba(255, 255, 255, 0.315);
+    color: var(--hover-color); /* Use the hover color variable */
 }
 
+/* Apply styles for screens that are smaller than 768 pixels wide */
 @media screen and (max-width: 767px) {
+    /* Hide the menu item element */
     .menu li {
         display: none;
     }
 
+    /* Show the icon element */
     .icon {
         font-weight: 900 !important;
-        font-size: 1.6875rem !important;
+        font-size: 1.6875rem !important; /* Use a relative unit for font size */
         padding: 0;
         margin: 0;
-        margin-top: -1.375rem;
+        margin-top: -1.375rem; /* Use a relative unit for margin */
         display: flex;
     }
 
+    /* Add a hover effect on the icon element */
     .icon:hover {
-        background-color: rgba(255, 255, 255, 0.315);
+        background-color: var(--hover-color); /* Use the hover color variable */
         border-radius: 0.2rem;
     }
 
+    /* Adjust the logo margin */
     .logo {
-        margin: 0 0 0 0.5rem;
+        margin: 0 0 0 0.5rem; /* Use a relative unit for margin */
     }
 
+    /* Adjust the logo image height */
     .logo img {
-        height: 3.125rem;
+        height: 3.125rem; /* Use a relative unit for height */
     }
 
+    /* Change the menu link color */
     .menu a {
-        padding: 0.25rem 0.25em;
-        color: white;
+        padding: 0.25rem 0.25em; /* Use a relative unit for padding */
+        color: var(--link-color); /* Use the link color variable */
     }
 }
