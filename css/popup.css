@@ -10,6 +10,7 @@
     overflow: auto; /* Enable scroll if needed */
     overflow-x: hidden;
     background-color: rgb(0, 0, 0); /* Fallback color */
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Modal Content/Box */
