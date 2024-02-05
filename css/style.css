@@ -117,6 +117,12 @@ iframe {
 
 /* Apply styles for screens that are smaller than 768 pixels wide */
 @media screen and (max-width: 767px) {
+
+    /* Prevent scrolling to x axis */
+    body {
+        overflow-x: hidden;
+    }
+
     /* Adjust the neon image width */
     .neon-image {
         width: 80%; /* Use a relative unit for width */
