@@ -29,7 +29,8 @@
 }
 
 /* Styling for navigation buttons */
-button {
+.prev,
+.next {
     position: absolute;
     top: 50%;
     transform: translateY(
@@ -62,19 +63,25 @@ button {
         -moz-box-shadow: none;
         box-shadow: none;
     }
+
     .slide img {
         max-height: 25vh; /* Adjust the maximum height of images for mobile screens */
+        width: auto;
     }
-    button {
+
+    .prev,
+    .next {
         font-size: 2rem; /* Adjust the font size for smaller screens */
         transform: translateY(
             -5vh
         ); /* Adjust the vertical position of buttons for smaller screens */
     }
+
     /* Styling for the previous button */
     .prev {
         left: 0.2rem;
     }
+
     /* Styling for the next button */
     .next {
         right: 0.2rem;

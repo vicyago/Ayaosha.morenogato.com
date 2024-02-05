@@ -9,11 +9,6 @@
     --base-font-size: 16px;
 }
 
-/* Set the base font size for the html element */
-html {
-    font-size: var(--base-font-size);
-}
-
 /* Style the header element */
 header {
     background-color: var(
@@ -50,7 +45,6 @@ header {
 
 /* Style the menu element */
 .menu {
-    padding: 0 0.5rem 0 0.5rem; /* Use a relative unit for padding */
     float: right;
 }
 
@@ -70,11 +64,6 @@ header {
     text-transform: uppercase;
     color: var(--text-color); /* Use the text color variable */
     padding: 0.5rem; /* Use a relative unit for padding */
-}
-
-/* Style the menu image element */
-.menu img {
-    width: 15%; /* Use a relative unit for width */
 }
 
 /* Add a scale effect on the menu image element when hovered */

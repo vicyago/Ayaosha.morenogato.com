@@ -6,7 +6,7 @@ var modalContent = document.getElementsByClassName("modal-content")[0];
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
-
+var btn = document.getElementById("myBtnMobile");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 

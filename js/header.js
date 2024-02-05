@@ -17,13 +17,13 @@ function clickListener(e) {
         document.getElementById("mySidenav")
     ).width;
     // If the clicked element is not the side navigation and the side navigation is open, close it
-    if (clickedId !== "mySidenav" && navState === "250px") {
+    if (clickedId !== "mySidenav" && navState === "200px") {
         closeSideNav();
     }
     // If the clicked element is the menu icon and the side navigation is closed, open it
     if (clickedId === "menuIcon" && navState === "0px") {
         // Set the width of the side navigation to 250px using a ternary operator
         document.getElementById("mySidenav").style.width =
-            clickedId === "menuIcon" ? "250px" : "0px";
+            clickedId === "menuIcon" ? "200px" : "0px";
     }
 }

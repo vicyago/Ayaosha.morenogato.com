@@ -1,15 +1,16 @@
-// Add an event listener to the document to run a function when the DOM is fully loaded
-document.addEventListener("DOMContentLoaded", () => {
+// Declare the function in the global scope
+const applyExitAnimation = () => {
     // Get the left and right image elements by their ids
     const leftImage = document.getElementById("leftImage");
     const rightImage = document.getElementById("rightImage");
-    // Declare a function to apply an exit animation to the images
-    const applyExitAnimation = () => {
-        // Move the left image to the left by 100% of its width
-        leftImage.style.transform = "translateX(-100%)";
-        // Move the right image to the right by 100% of its width
-        rightImage.style.transform = "translateX(100%)";
-    };
+    // Move the left image to the left by 100% of its width
+    leftImage.style.transform = "translateX(-100%)";
+    // Move the right image to the right by 100% of its width
+    rightImage.style.transform = "translateX(100%)";
+};
+
+// Add an event listener to the document to run a function when the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", () => {
     // Call the function to apply the exit animation
     applyExitAnimation();
 });
