@@ -40,8 +40,10 @@
 }
 
 .btnPopup {
-    display: inline;
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0.35rem 0.5rem 0.35rem 0.5rem;
+    margin-right: 0.5rem;
     background-color: transparent;
     border: 0.2rem solid white;
     border-radius: 0.605rem; /* Add rounded corners to the element */

@@ -51,11 +51,13 @@ header {
 /* Style the menu list element */
 .menu ul {
     list-style-type: none;
+
 }
 
 /* Style the menu item element */
 .menu li {
-    display: inline;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 /* Style the menu link element */
