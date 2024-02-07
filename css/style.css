@@ -81,30 +81,6 @@ main {
     transition: filter 0.3s, transform 0.4s ease-out; /* Add transitions for filter and transform properties */
 }
 
-/* Style the neon words container element */
-.neon-words-container {
-    position: fixed; /* Use fixed positioning to stay in the same place */
-    top: 0; /* Position element at the top edge of the viewport */
-    left: 0; /* Position element at the left edge of the viewport */
-    width: 100%; /* Set width to 100% of the viewport */
-    height: 100%; /* Set height to 100% of the viewport */
-    z-index: -1; /* Set z-index to -1 to appear behind other content */
-}
-
-/* Style the neon word element */
-.neon-word {
-    position: absolute; /* Use absolute positioning for precise control */
-    font-family: "Tilt Neon", sans-serif; /* Use a custom neon font */
-    font-size: 1.125rem; /* Use a relative unit for font size */
-    color: var(
-        --neon-color
-    ); /* Set text color to neon pink using the neon color variable */
-    text-shadow: 0 0 0.625rem var(--neon-color), 0 0 1.25rem var(--neon-color),
-        0 0 1.875rem var(--neon-color); /* Add a neon glow effect to the text using the neon color variable */
-    opacity: 0; /* Set opacity to 0 to make the text invisible */
-    transition: opacity 1s ease-in-out; /* Add a transition for opacity property */
-}
-
 /* Style the iframe element */
 iframe {
     padding: 0.2rem 0 0.2rem 0;

@@ -41,6 +41,10 @@ header {
 /* Style the logo image element */
 .logo img {
     height: 6vmax; /* Use a relative unit for height */
+    filter: drop-shadow(
+        0 0 20px rgba(255, 0, 255, 0.7)
+    ); /* Add a neon pink drop shadow effect */
+    transition: filter 0.3s ease-out; /* Add a transition for the filter property */
 }
 
 /* Style the menu element */
@@ -51,7 +55,6 @@ header {
 /* Style the menu list element */
 .menu ul {
     list-style-type: none;
-
 }
 
 /* Style the menu item element */
@@ -66,12 +69,19 @@ header {
     text-transform: uppercase;
     color: var(--text-color); /* Use the text color variable */
     padding: 0.5rem; /* Use a relative unit for padding */
+    filter: drop-shadow(
+        0 0 20px rgba(255, 0, 255, 0.7)
+    ); /* Add a neon pink drop shadow effect */
+    transition: filter 0.3s ease-out; /* Add a transition for the filter property */
 }
 
 /* Add a scale effect on the menu image element when hovered */
 .menu img:hover {
     scale: 90%;
     transition: 0.2s;
+    filter: drop-shadow(
+        0 0 20px rgba(255, 0, 255, 0.7)
+    ); /* Add a neon pink drop shadow effect */
 }
 
 /* Hide the icon element by default */

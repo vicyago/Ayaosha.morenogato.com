@@ -10,7 +10,7 @@
     overflow: auto; /* Enable scroll if needed */
     overflow-x: hidden;
     background-color: rgb(0, 0, 0); /* Fallback color */
-    font-family: 'Baskervville', serif;
+    font-family: "Baskervville", serif;
     font-size: 1.5rem;
 }
 
@@ -50,13 +50,20 @@
     border: 0.2rem solid white;
     border-radius: 0.605rem; /* Add rounded corners to the element */
     color: white;
-    font-family: "Tilt Neon", sans-serif; /* Use a custom neon font */
     font-size: 1.125rem; /* Use a relative unit for font size */
+    font-family: "Baskervville", serif;
+    filter: drop-shadow(
+        0 0 20px rgba(255, 0, 255, 0.7)
+    ); /* Add a neon pink drop shadow effect */
+    transition: filter 0.3s ease-out; /* Add a transition for the filter property */
 }
 
 .btnPopup:hover {
     scale: 90%;
     transition: 0.2s;
+    filter: drop-shadow(
+        0 0 20px rgba(255, 0, 255, 0.7)
+    ); /* Add a neon pink drop shadow effect */
 }
 
 /* Grid Styles */
@@ -79,14 +86,13 @@
     .btnPopup {
         padding: 0.5rem 0.5rem 0.5rem 2rem;
         font-size: 1.5625rem;
-        font-family: initial;        
         border: none;
     }
 
     .btnPopup:hover {
-    scale: 100%;
-    color: var(--hover-color); /* Use the hover color variable */
-}
+        scale: 100%;
+        color: var(--hover-color); /* Use the hover color variable */
+    }
 
     .grid3 {
         grid-template-columns: 1fr;
@@ -105,6 +111,6 @@
     }
 
     .modal-content {
-    background-image: none; /* Set background image */
+        background-image: none; /* Set background image */
     }
 }
