@@ -93,12 +93,11 @@ iframe {
 
 /* Apply styles for screens that are smaller than 768 pixels wide */
 @media screen and (max-width: 767px) {
-
     /* Prevent scrolling to x axis */
     html {
         overflow-x: hidden;
     }
-    
+
     body {
         overflow-x: hidden;
     }
