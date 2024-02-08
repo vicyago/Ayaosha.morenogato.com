@@ -116,6 +116,6 @@
     }
 
     .modal-content {
-        background-image: none; /* Set background image */
+         background-image: none;
     }
 }
