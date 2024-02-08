@@ -28,7 +28,8 @@
 .close {
     color: #ffffff;
     float: right;
-    font-size: 3rem;
+    padding-right: 2rem;
+    font-size: 5rem;
     font-weight: bold;
 }
 
@@ -86,6 +87,12 @@
 
 /* Media query for smaller screens (e.g., mobile devices) */
 @media screen and (max-width: 768px) {
+
+    .close {
+        font-size: 3.5rem;
+        padding: 0%;
+    }
+
     .btnPopup {
         padding: 0.5rem 0.5rem 0.5rem 2rem;
         margin: 0;
@@ -113,11 +120,15 @@
 
     .modal {
         font-size: 1.2rem;
-        background: linear-gradient(to bottom, rgba(104, 104, 104, 0.616), black, rgba(80, 80, 80, 0.568));
+        background: linear-gradient(
+            to bottom,
+            rgba(104, 104, 104, 0.616),
+            black,
+            rgba(80, 80, 80, 0.568)
+        );
     }
 
     .modal-content {
-         background-image: none;
+        background-image: none;
     }
-
 }
