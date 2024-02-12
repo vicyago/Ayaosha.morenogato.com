@@ -118,7 +118,7 @@ main {
     }
 
     /* Adjust the iframe margin and width */
-    iframe {
+    .iframefy {
         margin-top: 65%; /* Use a relative unit for margin */
         width: 80%; /* Use a relative unit for width */
     }
