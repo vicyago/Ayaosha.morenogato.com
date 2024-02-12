@@ -82,13 +82,97 @@ main {
 }
 
 /* Style the iframe element */
+
 .iframefy {
-    padding: 0.2rem 0 0.2rem 0;
-    border-radius: 0.5rem; /* Add rounded corners to the element */
-    margin-top: 25%; /* Use a relative unit for margin */
+    width: 30%;
+    margin-top: 20%; /* Use a relative unit for margin */
     background-color: var(
         --background-color
     ); /* Use the background color variable */
+}
+
+.spotify-player {
+    display: flex;
+    align-items: center;
+    background-color: #282828;
+    color: #fff;
+    border-radius: 0.5rem; /* Add rounded corners to the element */
+}
+
+.album-cover img {
+    max-width: 4rem;
+    height: auto;
+    margin: 0.1rem 0.5rem 0 0;
+    padding: 0.3rem;
+    border-radius: 0.8rem; /* Add rounded corners to the element */
+}
+
+.track-info {
+    margin-top: -5%;
+    font-family: "Open Sans", sans-serif;
+}
+
+.track-title {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.artist-name {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.player-controls {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the top */
+    margin-left: 35%;
+}
+
+/* Media queries for different screen sizes of margin left adjustment */
+@media screen and (min-width: 1920px) {
+    .player-controls {
+        margin-left: 55%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .player-controls {
+        margin-left: 5%;
+    }
+
+}
+
+.play-button-container {
+    background-color: white;
+    border: #222222;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+    text-align: center; /* Center horizontally */
+    line-height: 2rem; /* Center vertically */
+    transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+.play-button-container:hover {
+    transform: scale(0.9); /* Shrink the div on hover */
+}
+
+.play-button {
+    font-size: 1rem;
+    margin-left: 10%;
+}
+
+.play-button a {
+    text-decoration: none;
+    color: #282828;
+}
+
+.spotify-logo img {
+    max-width: 40%;
+    margin: 0.1rem 0 0.5rem 1rem;
+    /* Other styling properties */
 }
 
 /* Apply styles for screens that are smaller than 768 pixels wide */

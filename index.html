@@ -20,6 +20,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Caveat:wght@700&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Caveat:wght@700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 
     <title>Morenogato.com</title>
 </head>
@@ -86,9 +91,28 @@
             <img src="./img/right-half.webp" alt="Right Half" class="half-image" id="rightImage" />
         </div>
 
-        <iframe class="iframefy"
-            src="https://open.spotify.com/embed/track/50gMA5ZTPC0MZD8rai0kLx?utm_source=generator&theme=0" width="30%"
-            height="100%" frameborder="0" allowfullscreen="" allow="" loading="lazy"></iframe>
+        <div class="iframefy">
+
+            <div class="spotify-player">
+                <div class="album-cover">
+                    <!-- Add your album cover image here -->
+                    <img src="./img/capasingle.webp" alt="Album Cover">
+                </div>
+                <div class="track-info">
+                    <h2 class="track-title">morenogato.com</h2>
+                    <p class="artist-name">Ayosha, PODANA</p>
+                </div>
+                <div class="player-controls">
+                    <div class="spotify-logo">
+                        <img src="./img/spotify-iframe.webp" alt="Spotify Logo">
+                    </div><div class="play-button-container">
+                    <span class="play-button"><a href="https://open.spotify.com/intl-pt/album/2ZX4NfcvzRTUbGDXM9q3i2?si=PvNe1R-XQ2CFLD04MDwl3Q" target="_blank">&#9654;</a></span> <!-- Play button icon -->
+                    <!-- Other controls (next, previous, volume, etc.) -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
         <!-- The Modal -->
         <div id="myModal" class="modal">

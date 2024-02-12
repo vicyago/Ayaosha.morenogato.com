@@ -85,6 +85,8 @@
     padding: 1rem;
 }
 
+
+
 /* Media query for smaller screens (e.g., mobile devices) */
 @media screen and (max-width: 768px) {
     .close {
