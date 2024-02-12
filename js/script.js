@@ -53,28 +53,5 @@ applyNeonEffect();
 // Start automatic color transitions
 startColorTransition(neonImage, ...menuLinks, logoImage, biographyButton);
 
-// Add event listener for hover
-document.body.addEventListener("mouseenter", () => {
-    // Apply exit animation for left and right images on hover
-    applyExitAnimation();
-});
 
-// Create fewer neon words for a balanced effect
-// Use a for loop to call the createNeonWord function 30 times
-for (let i = 0; i < 30; i++) {
-    createNeonWord();
-}
 
-// Randomly show/hide neon words
-// Use setInterval to run a function every 500 milliseconds
-setInterval(() => {
-    // Declare a constant variable to store all the neon word elements
-    const allNeonWords = document.querySelectorAll(".neon-word");
-    // Use forEach to loop through each neon word element
-    allNeonWords.forEach((word) => {
-        // Declare a constant variable to store a random opacity value between 0 and 1
-        const randomOpacity = Math.random();
-        // Set the opacity property of the neon word element to the random value
-        word.style.opacity = randomOpacity;
-    });
-}, 500); // Adjust timing as desired

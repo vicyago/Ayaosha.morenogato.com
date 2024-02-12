@@ -82,7 +82,7 @@ main {
 }
 
 /* Style the iframe element */
-iframe {
+.iframefy {
     padding: 0.2rem 0 0.2rem 0;
     border-radius: 0.5rem; /* Add rounded corners to the element */
     margin-top: 25%; /* Use a relative unit for margin */
