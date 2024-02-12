@@ -123,7 +123,6 @@ header {
 
 /* Style the side navigation link element */
 .sidenav a {
-    padding: 0.5rem 0.5rem 0.5rem 2rem; /* Use a relative unit for padding */
     text-decoration: none;
     font-size: 1.5625rem; /* Use a relative unit for font size */
     color: var(--link-color); /* Use the link color variable */
@@ -174,5 +173,9 @@ header {
     .menu a {
         padding: 0.25rem 0.25em; /* Use a relative unit for padding */
         color: var(--link-color); /* Use the link color variable */
+    }
+
+    .sidenav a {
+        text-decoration: none;
     }
 }
