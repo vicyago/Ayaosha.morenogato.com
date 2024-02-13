@@ -161,6 +161,23 @@ main {
     /* Other styling properties */
 }
 
+/* Media queries for different screen sizes of player controls */
+@media screen and (min-width: 1920px) {
+    .play-button-container {
+        scale: 1.1;
+    }
+
+    .play-button {
+        margin-left: 15%;
+    }
+
+    .spotify-logo img {
+        max-width: 5%;
+        margin: 0 0% 5% 95%;
+        /* Other styling properties */
+    }
+}
+
 /* Apply styles for screens that are smaller than 768 pixels wide */
 @media screen and (max-width: 767px) {
     /* Prevent scrolling to x axis */
