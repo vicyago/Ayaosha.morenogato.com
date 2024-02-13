@@ -110,10 +110,21 @@ main {
 .track-info {
     margin-top: -5%;
     font-family: "Open Sans", sans-serif;
+    transition: transform 0.3s ease;
+}
+
+.track-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.track-info:hover {
+    transform: scale(0.9); /* Shrink the div on hover */
 }
 
 .track-title {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
     margin: 0;
 }
 
