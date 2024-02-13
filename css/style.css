@@ -125,22 +125,8 @@ main {
 .player-controls {
     display: flex;
     flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align items to the top */
-    margin-left: 35%;
-}
-
-/* Media queries for different screen sizes of margin left adjustment */
-@media screen and (min-width: 1920px) {
-    .player-controls {
-        margin-left: 55%;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .player-controls {
-        margin-left: 5%;
-    }
-
+    align-items: flex-end; /* Align items to the top */
+    margin-right: 0.5rem;
 }
 
 .play-button-container {
@@ -170,8 +156,8 @@ main {
 }
 
 .spotify-logo img {
-    max-width: 40%;
-    margin: 0.1rem 0 0.5rem 1rem;
+    max-width: 10%;
+    margin: 0 0% 5% 90%;
     /* Other styling properties */
 }
 
@@ -205,5 +191,19 @@ main {
     .iframefy {
         margin-top: 65%; /* Use a relative unit for margin */
         width: 80%; /* Use a relative unit for width */
+    }
+
+    .play-button-container {
+        scale: 0.8;
+    }
+
+    .play-button {
+        margin-left: 10%;
+    }
+
+    .spotify-logo img {
+        max-width: 15%;
+        margin: 0 0% 15% 85%;
+        /* Other styling properties */
     }
 }
