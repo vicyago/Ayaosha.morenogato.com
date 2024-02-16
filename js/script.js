@@ -20,6 +20,7 @@ const neonImage = document.getElementById("neonImage");
 const menuLinks = document.querySelectorAll(".menu a");
 const logoImage = document.querySelector(".logo img");
 const biographyButton = document.getElementById("myBtn");
+const eventsButton = document.getElementById("myEvents");
 
 // Declare a function to apply a neon effect to the image
 const applyNeonEffect = () => {
@@ -51,7 +52,7 @@ const startColorTransition = (...elements) => {
 applyNeonEffect();
 
 // Start automatic color transitions
-startColorTransition(neonImage, ...menuLinks, logoImage, biographyButton);
+startColorTransition(neonImage, ...menuLinks, logoImage, biographyButton, eventsButton);
 
 
 

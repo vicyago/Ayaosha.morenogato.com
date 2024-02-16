@@ -28,9 +28,12 @@
 .close {
     color: #ffffff;
     float: right;
+    position: relative;
+    z-index: 6;
     padding-right: 2rem;
     font-size: 5rem;
-    font-weight: bold;
+    font-family: "Baskervville", serif;
+    font-weight: bold; 
 }
 
 .close:hover,
@@ -45,7 +48,7 @@
 .btnPopup {
     display: inline-block;
     vertical-align: middle;
-    padding: 0.35rem 0.5rem 0.35rem 0.5rem;
+    padding: 0.35rem 0.75rem 0.35rem 0.5rem;
     margin-right: 0.5rem;
     background-color: transparent;
     border: 0.2rem solid white;
@@ -69,6 +72,10 @@
     ); /* Add a neon pink drop shadow effect */
 }
 
+#myEvents {
+    margin-right: 0.9rem;
+}
+
 /* Grid Styles */
 .grid3 {
     display: grid;
@@ -84,8 +91,6 @@
 .side3 {
     padding: 1rem;
 }
-
-
 
 /* Media query for smaller screens (e.g., mobile devices) */
 @media screen and (max-width: 768px) {
@@ -123,9 +128,9 @@
         font-size: 1.2rem;
         background: linear-gradient(
             to bottom,
-            rgba(80, 80, 80, 0.90),
-            rgba(0, 0, 0, 0.90),
-            rgba(80, 80, 80, 0.90)
+            rgba(80, 80, 80, 0.9),
+            rgba(0, 0, 0, 0.9),
+            rgba(80, 80, 80, 0.9)
         );
     }
 

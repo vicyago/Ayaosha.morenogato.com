@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/popup.css" />
     <link rel="stylesheet" href="./css/slider.css" />
+    <link rel="stylesheet" href="./css/events.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap" rel="stylesheet">
@@ -24,6 +25,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Caveat:wght@700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Caveat:wght@700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans+Narrow:wght@400;700&family=Strait&display=swap"
         rel="stylesheet">
 
     <title>Morenogato.com</title>
@@ -45,7 +51,10 @@
                 <div class="menu" id="myTopnav">
                     <ul>
                         <a href="javascript:void(0);" id="menuIcon" class="icon">&#9776;</a>
-                        <li><!-- Trigger/Open The Modal -->
+                        <li><!-- Trigger/Open The Modal Events-->
+                            <button class="btnPopup" id="myEvents">EVENTOS</button>
+                        </li>
+                        <li><!-- Trigger/Open The Modal Biography -->
                             <button class="btnPopup" id="myBtn">BIOGRAFIA</button>
                         </li>
                         <li><a href="https://www.facebook.com/Ayiosha" target="_blank"><img
@@ -74,7 +83,11 @@
                 <br />
                 <li><a href="https://open.spotify.com/artist/0LuhrFfL6HDMqgrYHV64sk" target="_blank">Spotify</a></li>
                 <br />
-                <li><!-- Trigger/Open The Modal -->
+                <li><!-- Trigger/Open The Modal Events-->
+                    <button class="btnPopup" id="myEventsMobile">Eventos</button>
+                </li>
+                <br />
+                <li><!-- Trigger/Open The Modal Biography -->
                     <button class="btnPopup" id="myBtnMobile">Biografia</button>
                 </li>
             </ul>
@@ -99,28 +112,33 @@
                     <img src="./img/capasingle.webp" alt="Album Cover">
                 </div>
                 <div class="track-info">
-                    <a href="https://open.spotify.com/intl-pt/album/2ZX4NfcvzRTUbGDXM9q3i2?si=PvNe1R-XQ2CFLD04MDwl3Q" class="track-title">morenogato.com</a>
-                    <a href="https://open.spotify.com/intl-pt/album/2ZX4NfcvzRTUbGDXM9q3i2?si=PvNe1R-XQ2CFLD04MDwl3Q" class="artist-name">Ayosha, PODANA</a>
+                    <a href="https://open.spotify.com/intl-pt/album/2ZX4NfcvzRTUbGDXM9q3i2?si=PvNe1R-XQ2CFLD04MDwl3Q"
+                        class="track-title">morenogato.com</a>
+                    <a href="https://open.spotify.com/intl-pt/album/2ZX4NfcvzRTUbGDXM9q3i2?si=PvNe1R-XQ2CFLD04MDwl3Q"
+                        class="artist-name">Ayosha, PODANA</a>
                 </div>
                 <div class="player-controls">
                     <div class="spotify-logo">
                         <img src="./img/spotify-iframe.webp" alt="Spotify Logo">
-                    </div><div class="play-button-container">
-                    <span class="play-button"><a href="https://open.spotify.com/intl-pt/album/2ZX4NfcvzRTUbGDXM9q3i2?si=PvNe1R-XQ2CFLD04MDwl3Q" target="_blank">&#9654;</a></span> <!-- Play button icon -->
-                    <!-- Other controls (next, previous, volume, etc.) -->
+                    </div>
+                    <div class="play-button-container">
+                        <span class="play-button"><a
+                                href="https://open.spotify.com/intl-pt/album/2ZX4NfcvzRTUbGDXM9q3i2?si=PvNe1R-XQ2CFLD04MDwl3Q"
+                                target="_blank">&#9654;</a></span> <!-- Play button icon -->
+                        <!-- Other controls (next, previous, volume, etc.) -->
                     </div>
                 </div>
             </div>
 
         </div>
 
-        <!-- The Modal -->
+        <!-- The Modal Biography -->
         <div id="myModal" class="modal">
 
-            <!-- Modal content -->
+            <!-- Modal content Biography -->
             <div class="modal-content">
 
-                <span class="close">&times;</span>
+                <span 1 class="close">&times;</span>
 
                 <div class="slider-container">
                     <div class="slider">
@@ -289,6 +307,28 @@
 
         </div>
 
+        <!-- The Modal Events -->
+        <div id="myEventsModal" class="modal">
+
+            <!-- Modal content Events -->
+            <div class="modal-content">
+
+                <span class="close">&times;</span>
+
+               <img class="EventsImg" src="./img/band.webp">
+
+                <h1>Próximos Eventos</h1>
+                <ul class="EventsModal">
+                    <li><span class="date">22/02/2024 - as 20:00h</span> - Local: Amigos da Elt</li>
+                    <img class="EventsModalImg" src="./img/AmigosdaElt.webp">
+                    <li><span class="date">09/03/2024 - as 15:07h</span> - Local: 10 anos de Cia do Piolho</li>
+                    <img class="EventsModalImg" src="./img/10anosdeCiadoPiolho.webp">                    
+                </ul>
+
+            </div>
+
+        </div>
+
     </main>
 
 </body>
@@ -297,5 +337,6 @@
 <script src="./js/header.js"></script>
 <script src="./js/popup.js"></script>
 <script src="./js/slider.js"></script>
+<script src="./js/events.js"></script>
 
 </html>

@@ -32,6 +32,16 @@ main {
     align-items: center; /* Center items vertically */
 }
 
+/* Unvisited link */
+a:link {
+    color: rgb(255, 255, 255);
+}
+
+/* Visited link */
+a:visited {
+    color: rgb(199, 199, 199);
+}
+
 /* Style the image container element */
 .imgcontainer {
     display: flex; /* Use flex display to align items */
