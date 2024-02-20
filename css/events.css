@@ -70,6 +70,7 @@
     position: absolute;
     z-index: 1;
     left: 30%;
+    opacity: 0.9;
 }
 
 /* Apply styles for screens that are smaller than 768 pixels wide */
